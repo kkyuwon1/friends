@@ -1,0 +1,5 @@
+Activate post processing - just add post Processing Package to you project:
+
+Windows/Package Manager/Post Processing
+
+URP version of this interior included in project folder as separate unitypackage, you need import it in new clear unity project.
