@@ -44,10 +44,12 @@ public class TapeController : MonoBehaviour
             if (casetteController.isOpen && casettePlayer.IsTapeInside(tapeCollider))
             {
                 transform.position = casettePlayer.tapeInsertPosition;
+                casettePlayer.SetTapeInserted(true); // 테이프가 삽입되었음을 설정
             }
             else
             {
                 transform.position = initialPosition;
+                casettePlayer.SetTapeInserted(false); // 테이프가 삽입되지 않았음을 설정
             }
         }
     }
